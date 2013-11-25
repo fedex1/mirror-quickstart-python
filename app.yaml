@@ -1,5 +1,6 @@
 # application: your_appengine_application_id
-application: glass-python-311
+application: glass-311
+# application: glass-python-311
 version: 1
 runtime: python27
 api_version: 1
