@@ -92,7 +92,7 @@ class MainHandler(webapp2.RequestHandler):
     except errors.HttpError:
       logging.info('Unable to find Python Quick Start contact.')
 
-    timeline_items = self.mirror_service.timeline().list(maxResults=3).execute()
+    timeline_items = self.mirror_service.timeline().list(maxResults=20).execute()
     template_values['timelineItems'] = timeline_items.get('items', [])
 
     subscriptions = self.mirror_service.subscriptions().list().execute()
